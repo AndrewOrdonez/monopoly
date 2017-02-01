@@ -20,6 +20,7 @@ if (hfgt.equals("4")){
 }else{
 	print("You chose to play as 'DOG', congratulations! ");
 }
+// add piece in player for when you inevitably need to make multiplayer
 
 			}
 
