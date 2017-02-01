@@ -4,19 +4,19 @@ abstract class Tile
 	{
 protected String name;
 protected int location;
-public String getName()
+protected String getName()
 	{
 		return name;
 	}
-public void setName(String name)
+protected void setName(String name)
 	{
 		this.name = name;
 	}
-public int getLocation()
+protected int getLocation()
 	{
 		return location;
 	}
-public void setLocation(int location)
+protected void setLocation(int location)
 	{
 		this.location = location;
 	}
