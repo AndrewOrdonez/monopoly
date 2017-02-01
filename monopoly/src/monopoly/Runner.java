@@ -6,7 +6,10 @@ static void print(String s) throws InterruptedException{
 	char[] cars=s.toCharArray();
 	for(char c:cars){
 		System.out.print(c);
-		Thread.sleep(40);
+		if (c==' '){
+			Thread.sleep(35);
+		}
+		Thread.sleep(35);
 	}
 }
 		public static void main(String[] args) throws InterruptedException
@@ -21,7 +24,6 @@ if (hfgt.equals("4")){
 	print("You chose to play as 'DOG', congratulations! ");
 }
 // add piece in player for when you inevitably need to make multiplayer
-
 			}
 
 	}
