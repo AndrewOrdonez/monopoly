@@ -71,7 +71,7 @@ public static void main(String[] args) throws InterruptedException
 				board.add(k);
 				board.add(l);
 				board.add(m);
-				board.add(n);
+				board.add(n); 
 				board.add(o);
 				board.add(p);
 				board.add(q);
