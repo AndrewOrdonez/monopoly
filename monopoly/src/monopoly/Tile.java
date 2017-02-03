@@ -4,10 +4,17 @@ abstract class Tile implements Comparable<Tile>
 	{
 protected String name;
 protected int location;
+protected int find;
 protected String getName()
 	{
 		return name;
 	}
+public int getFind() {
+	return find;
+}
+public void setFind(int find) {
+	this.find = find;
+}
 protected void setName(String name)
 	{
 		this.name = name;
