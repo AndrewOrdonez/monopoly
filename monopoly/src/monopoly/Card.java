@@ -7,6 +7,7 @@ public Card(String name, int location, String type){
 	this.name=name;
 	this.location=location;
 	this.type=type;
+	find=2;
 }
 public String getType()
 	{
