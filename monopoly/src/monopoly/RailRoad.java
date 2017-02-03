@@ -6,6 +6,7 @@ public class RailRoad extends Property
 			this.name=name;
 			this.location=location;
 			this.price=price;
+			find = 4;
 		}
 
 	}
