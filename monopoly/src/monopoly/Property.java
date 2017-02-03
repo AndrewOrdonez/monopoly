@@ -21,3 +21,4 @@ protected void setRent(int rent)
 		this.rent = rent;
 	}
 	}
+ 
