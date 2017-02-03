@@ -12,6 +12,7 @@ public ColoredSpace(String name, int location,char color, int price)
 		this.price = price;
 		this.name=name;
 		this.location=location;
+		find=1;
 	}
 public char getColor()
 	{
