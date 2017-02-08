@@ -8,7 +8,6 @@ private int tempLocation;
 private int money;
 public Player(String piece, int location, int tempLocation, int money)
 	{
-		super();
 		this.piece = piece;
 		this.location = location;
 		this.tempLocation = tempLocation;
