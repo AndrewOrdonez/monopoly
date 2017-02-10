@@ -53,42 +53,41 @@ static ColoredSpace b2=new ColoredSpace("Mt. Sherman", 1, 't', 60);
 static Card c2=new Card("Trail Fortune", 2, "CC");
 static ColoredSpace d2=new ColoredSpace("Quandrary Peak", 3, 't', 60);
 static Tax e2=new Tax("CO Fourteeners Initiative", 4, "income");
-static RailRoad f2=new RailRoad("Mt. Bierstadt", 5, 200);
-//keep working
-static ColoredSpace g2=new ColoredSpace("Oriental Avenue", 6, 'c', 100);
-static Card h2=new Card("Chance", 7, "chance");
-static ColoredSpace i2=new ColoredSpace("Vermont Avenue", 8, 'c', 100);
-static ColoredSpace j2=new ColoredSpace("Connecticut Avenue", 9, 'c', 120);
-static Jail k2=new Jail("Jail", 10);
-static ColoredSpace l2=new ColoredSpace("St. Charles Place", 11, 'p', 140);
-static Utility m2=new Utility("Electric Company", 12, 150);
-static ColoredSpace n2=new ColoredSpace("States Avenue", 13, 'p', 140);
-static ColoredSpace o2=new ColoredSpace("Virginia Avenue", 14, 'p', 160);
-static RailRoad p2=new RailRoad("Pennsylvania Railroad", 15, 200);
-static ColoredSpace q2=new ColoredSpace("St. James Place", 16, 'o', 180);
-static Card r2=new Card("Community Chest", 17, "CC");
-static ColoredSpace s2=new ColoredSpace("Tennesse Avenue", 18, 'o', 180);
-static ColoredSpace t2=new ColoredSpace("New York Avenue", 19, 'o', 200);
-static FreeParking u2=new FreeParking("Free Parking", 20);
-static ColoredSpace v2=new ColoredSpace("Kentucky Avenue", 21, 'r', 220);
-static Card w2=new Card("Chance", 22, "chance");
-static ColoredSpace x2=new ColoredSpace("Indiana Avenue", 23, 'r', 220);
-static ColoredSpace y2=new ColoredSpace("Illinois Avenue", 24, 'r', 240);
-static RailRoad z2=new RailRoad("BnO Railroad", 25, 200);
-static ColoredSpace aa2=new ColoredSpace("Atlantic Avenue", 26, 'y', 260);
-static ColoredSpace ab2=new ColoredSpace("Ventinor Avenue", 27, 'y', 260);
-static Utility ac2=new Utility("Water Works", 28, 150);
-static ColoredSpace ad2=new ColoredSpace("Marvin Gardens", 29, 'y', 280);
-static GoToJail ae2=new GoToJail("Boardwalk                            \nj.k. GO TO JAIL ", 30);
-static ColoredSpace af2=new ColoredSpace("Pacific Avenue", 31, 'g', 300);
-static ColoredSpace ag2=new ColoredSpace("North Carolina Avenue", 32, 'g', 300);
-static Card ai2=new Card("Community Chest", 33, "CC");
-static ColoredSpace aj2=new ColoredSpace("Pennsylvania Avenue", 34, 'g', 320);
-static RailRoad ak2=new RailRoad("Short Line", 35, 200);
-static Card al2=new Card("Chance", 36, "chance");
-static ColoredSpace am2=new ColoredSpace("Park Place", 37, 'b', 350);
-static Tax an2=new Tax("Luxury Tax", 38,"luxury");
-static ColoredSpace ao2=new ColoredSpace("boardwalk", 39, 'b', 400);
+static RailRoad f2=new RailRoad("Little bear-blanca traverse", 5, 200);
+static ColoredSpace g2=new ColoredSpace("Mt.bierstadt ", 6, 'c', 100);
+static Card h2=new Card("Go for an adventure", 7, "chance");
+static ColoredSpace i2=new ColoredSpace("Torreys peak", 8, 'c', 100);
+static ColoredSpace j2=new ColoredSpace("Grays peak", 9, 'c', 120);
+static Jail k2=new Jail("basecamp", 10);
+static ColoredSpace l2=new ColoredSpace("Mt. Yale", 11, 'p', 140);
+static Utility m2=new Utility("Pikes peak toll road", 12, 150);
+static ColoredSpace n2=new ColoredSpace("Mt. Princeton", 13, 'p', 140);
+static ColoredSpace o2=new ColoredSpace("Mt. Harvard", 14, 'p', 160);
+static RailRoad p2=new RailRoad("Crestones traverse", 15, 200);
+static ColoredSpace q2=new ColoredSpace("humbolt peak", 16, 'o', 180);
+static Card r2=new Card("Trail fortune", 17, "CC");
+static ColoredSpace s2=new ColoredSpace("Mt. lindsey", 18, 'o', 180);
+static ColoredSpace t2=new ColoredSpace("Kit carson peak", 19, 'o', 200);
+static FreeParking u2=new FreeParking("Scenic viewpoint", 20);
+static ColoredSpace v2=new ColoredSpace("Mt. sneffels", 21, 'r', 220);
+static Card w2=new Card("Go for an Adventure", 22, "chance");
+static ColoredSpace x2=new ColoredSpace("uncompahgre peak", 23, 'r', 220);
+static ColoredSpace y2=new ColoredSpace("Mt. eolus", 24, 'r', 240);
+static RailRoad z2=new RailRoad("Wilson-el diente traverse", 25, 200);
+static ColoredSpace aa2=new ColoredSpace("Mount of the Holy Cross", 26, 'y', 260);
+static ColoredSpace ab2=new ColoredSpace("Mt. Massive", 27, 'y', 260);
+static Utility ac2=new Utility("Mt. evans toll road", 28, 150);
+static ColoredSpace ad2=new ColoredSpace("mt. elbert", 29, 'y', 280);
+static GoToJail ae2=new GoToJail("Go to basecamp", 30);
+static ColoredSpace af2=new ColoredSpace("Castle peak", 31, 'g', 300);
+static ColoredSpace ag2=new ColoredSpace("Snowmass mountain", 32, 'g', 300);
+static Card ai2=new Card("Trail fortune", 33, "CC");
+static ColoredSpace aj2=new ColoredSpace("Pyramid peak", 34, 'g', 320);
+static RailRoad ak2=new RailRoad("maroon bells traverse", 35, 200);
+static Card al2=new Card("go for an adventure", 36, "chance");
+static ColoredSpace am2=new ColoredSpace("Longs peak", 37, 'b', 350);
+static Tax an2=new Tax("Lost Boot", 38,"luxury");
+static ColoredSpace ao2=new ColoredSpace("Capitol Peak", 39, 'b', 400);
 
 
 
@@ -184,11 +183,106 @@ for (int qr=0;qr<owned.size();qr++){
 	else{playBaseGame();}
 	}
 	
-	//copy and edit new play() to be usable with any other board
 	
 	
 	
 	
+
+
+
+static void play() throws InterruptedException{
+	int die=(int)(Math.random()*6)+1;
+	int dye=(int)(Math.random()*6)+1;
+	int mo=die+dye;
+	print("you are on "+board.get(player.getLocation()).getName());
+	print("you rolled a "+die+" and a "+dye+" for a total of "+mo);
+	player.setLocation(player.getLocation()+mo);
+	if (player.getLocation()>=40){
+		print("you passed the tile you started on and collected $200");
+		player.setMoney(player.getMoney()+200);
+		player.setLocation(player.getLocation()%40);
+	}
+	print("you have $"+player.getMoney());
+print("you currently own:");
+for (int qr=0;qr<owned.size();qr++){
+	print(owned.get(qr).getName());
+}
+	print("you then landed on "+board.get(player.getLocation()).getName());
+	switch (board.get(player.getLocation()).getFind()){
+	case 0:print("nothing happened");break;
+	case 1:print("would you like to buy the location for $"+((ColoredSpace) board.get(player.getLocation())).getPrice());
+			print("[1] yes\n[2]no");
+				if (scan.nextInt()==1){
+					owned.add((Property) board.get(player.getLocation()));
+					print("you bought it");
+					player.setMoney(player.getMoney()-((ColoredSpace) board.get(player.getLocation())).getPrice());
+
+				}	
+				else {
+					print("you didn't buy it");
+				}
+				break;
+	case 2:print("the space you landed on was supposed to give you a card, \nbut cards are physical objects and this is a game so it just isn't gonna work out");break;
+	case 3:if (((Tax) board.get(player.getLocation())).getType().equals("income")){
+				print("you must pay $200");
+				player.setMoney(player.getMoney()-200);break;
+			}
+			print("you must pay $100");
+			player.setMoney(player.getMoney()-100);break;
+	case 4:		print("would you like to buy the location for $"+((RailRoad) board.get(player.getLocation())).getPrice());
+	print("[1] yes\n[2]no");
+	if (scan.nextInt()==1){
+		owned.add((Property) board.get(player.getLocation()));
+		print("you bought it");
+		player.setMoney(player.getMoney()-((RailRoad) board.get(player.getLocation())).getPrice());
+	}	
+	else {
+		print("you didn't buy it");
+	}
+	break;
+	case 5:print("you are just passing through");break;
+	case 6:	print("would you like to buy the Utility for $"+((Utility) board.get(player.getLocation())).getPrice());
+	print("[1] yes\n[2]no");
+	if (scan.nextInt()==1){
+		owned.add((Property) board.get(player.getLocation()));
+		print("you bought it");
+		player.setMoney(player.getMoney()-((Utility) board.get(player.getLocation())).getPrice());
+	}	
+	else {
+		print("you didn't buy it");
+	}
+	case 7:print("Its nice here. :)");break;
+			
+	case 8:print("you went to jail, and will now try to roll doubles in order to get out for free\nyou roll a four and a three         \nyou roll a two and a one         \nyou roll a five and a five\nyou are let out of jail for free");	
+			player.setLocation(20);break;
+	default:print("something happened and you didn't land on the board, I'm actually pretty impressed that you were able to get here and the compiler did'nt just through an error.\nHave Fun!");break;
+				
+			}
+	if (player.getMoney()<0){
+		print("You ran out of money.\n :( \nSo Sad...\nGAME OVER");
+	}
+	else{play();}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
 static ArrayList<Property> owned=new ArrayList<Property>();
 
@@ -201,7 +295,7 @@ public static void main(String[] args) throws InterruptedException
 				String ghj=scan.next();
 				if (!ghj.equals("2")){
 					if (!ghj.equals("1")){
-						print("your answer was not valid so you will beplaying the base game");
+						print("your answer was not valid so you will be playing the base game");
 					}
 				board.add(a);
 				board.add(b);
@@ -332,7 +426,7 @@ player.setPiece("DOG");
 					
 					
 					
-					//play();
+					play();
 				}
 			}
 
